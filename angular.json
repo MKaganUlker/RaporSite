@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "RaporSite": {
@@ -24,9 +24,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/app.min.css",
+              "src/assets/css/icons.min.css",
+              "src/assets/css/vendor/jquery-jvectormap-1.2.2.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/vendor.min.js",
+              "src/assets/js/app.min.js",
+              "src/assets/js/vendor/apexcharts.min.js",
+              "src/assets/js/vendor/jquery-jvectormap-1.2.2.min.js",
+              "src/assets/js/vendor/jquery-jvectormap-world-mill-en.js",
+              "src/assets/js/pages/demo.dashboard.js",
+              "./node_modules/apexcharts/dist/apexcharts.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +132,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "RaporSite"
+    }
+  },
+  "defaultProject": "RaporSite",
+  "cli": {
+    "analytics": false
+  }
 }
